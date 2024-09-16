@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Повістка</title>
+    <title>Запрошення на пиво і сушену рибу</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <style>
         body {
@@ -21,11 +21,10 @@
             padding: 30px;
             max-width: 400px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
         }
         h1 {
             font-size: 24px;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
             text-align: left;
         }
         p {
@@ -46,7 +45,7 @@
         }
         .btn span {
             font-size: 24px;
-            margin-right: 10px;
+            margin-left: 10px;
         }
         .btn:hover {
             background-color: #444;
@@ -56,14 +55,20 @@
 <body>
 
     <div class="container">
-        <h1>Вау! Вас кличуть на пиво і сушену рибу :)</h1><br>
-        <p>Вітаємо!</p> <p> Вам пропозиція краще за «руки і серця». Проведіть час нарешті по-нормальному, бахніть баночку пива і
+        <h1>Вау! Вас кличуть на пиво і сушену рибу :)</h1>
+        <p>Вітаємо! Вам пропозиція краще за «руки і серця». Проведіть час нарешті по-нормальному, бахніть баночку пива і
             закусіть смачною рибкою.</p> 
-            <p> Ви приймаєте пропозицію?</p>
-        <button class="btn">
-            Підтвердити  <span>🍻</span>
+        <p>Ви приймаєте пропозицію?</p>
+        <button class="btn" onclick="showThanksMessage()">
+            Підтвердити<span>🍻</span>
         </button>
     </div>
+
+    <script>
+        function showThanksMessage() {
+            alert("Дякую за відгук!");
+        }
+    </script>
 
 </body>
 </html>
